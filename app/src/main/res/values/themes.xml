@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mad_pra_8_106_5b6" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:background">@color/white</item>
+        <item name="cardBackgroundColor">#edfced</item>
+    </style>
+
+    <style name="Theme.Mad_pra_8_106_5b6" parent="Base.Theme.Mad_pra_8_106_5b6" />
+</resources>
