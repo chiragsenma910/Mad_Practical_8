@@ -20,8 +20,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="24dp"
-            android:clipToPadding="false">
+            android:paddingBottom="24dp">
 
             <TextView
                 android:id="@+id/txt_title"
@@ -30,13 +29,13 @@
                 android:text="Mad_Alarm_Practical"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:layout_marginTop="20sp"
+                android:layout_marginTop="40sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/card_alarmcreate"
+                android:id="@+id/card_alarmcreate1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +62,7 @@
                         />
 
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/txt_alarmtitle1"
@@ -92,7 +92,8 @@
                         />
 
                     <TextView
-                        android:id="@+id/txt_alarmcontent"
+                        android:id="@+id/textAlarmTime"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11:45:17 PM Aug,14 2022"
@@ -102,8 +103,8 @@
                         android:layout_gravity="center"
                         android:background="?cardBackgroundColor"
                         />
-
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btncreatealarm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:icon="@drawable/baseline_add_alarm_24"
@@ -123,12 +124,12 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/card_alarmset"
+                android:id="@+id/card_alarmcreate2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/card_alarmcreate"
+                app:layout_constraintTop_toBottomOf="@id/card_alarmcreate1"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="24dp"
                 app:cardElevation="5dp"
@@ -171,6 +172,7 @@
                         android:background="?cardBackgroundColor"/>
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCancleAlaram"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:icon="@drawable/baseline_alarm_off_24"
@@ -190,4 +192,3 @@
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--    https://blog.prototypr.io/implementing-dark-theme-in-android-dfe63e62145d-->
